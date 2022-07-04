@@ -1,13 +1,35 @@
 body {
+  background-color: #F3B18C;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  font-family: 'Finger Paint', cursive;
+  font-style: normal;
+  
+  }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.title {
+  font-family: 'Finger Paint', cursive;
+  color: #0026ED;
+}
+.game {
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 300px;
+  
+}
+.box{
+margin-top: 20px;
+width: 75px;
+height: 75px;
+background-color: #fff;
+border: 10px solid #000; 
+border-radius: 10px;
+font-size: 35px;
+color: red;
+}
+
