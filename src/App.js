@@ -4,8 +4,8 @@ import { useEffect, useState } from 'react';
 const iconList = ['', 'X', 'O']
 function App() {
   const [card, setCard] = useState([])
-  const [finalArray, setFinalArray] = useState([ [1,2,3,4,5,6,7,8,9].map( () => ({icon : ''}) )])
-  console.log(finalArray)
+  const [finalArray, setFinalArray] = useState(['','','','','','','','',''])
+  console.log("finalArray",finalArray)
 
   const push = () => {
     let newList = []
@@ -27,8 +27,10 @@ function App() {
     push()
   }, [])
   const openCard = id => {
-    const item = finalArray[id].icon === '' ? 'X' : finalArray[id].icon === 'X' ?  'O' : ''
-    setFinalArray(item)
+    // console.log(finalArray[0] ,"asddasd")
+    const item = finalArray[id] === '' ? 'X' : finalArray[id] === 'X' ?  'O' : ''
+    console.log(item,"item")
+    setFinalArray(finalArray[id] = item)
     console.log(finalArray)
    }
   return (
