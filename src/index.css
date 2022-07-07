@@ -22,7 +22,7 @@ code {
   width: 300px;
   
 }
-.box{
+.Box{
 margin-top: 20px;
 width: 75px;
 height: 75px;
@@ -31,5 +31,16 @@ border: 10px solid #000;
 border-radius: 10px;
 font-size: 35px;
 color: red;
+cursor: pointer;
+transition: all 500ms;
+}
+.Box:Hover {
+    background-color: #919191;
+    color: white;
+}
+.Win {
+  background: blue;
+  transform: rotateY(180deg);
+  color: #fff;
 }
 
